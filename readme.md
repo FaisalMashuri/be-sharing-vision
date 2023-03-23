@@ -43,8 +43,8 @@ Sudah Ada collection postman
   - lalu kunjungi localhost:3000
 
 - Endpoint
-POST : /article
-GET : /article/:offset/:limit
-GET : /article/:id
-PUT : /article/:id
-DELETE : /article/:id
+  - POST : /article
+  - GET : /article/:offset/:limit
+  - GET : /article/:id
+  - PUT : /article/:id
+  - DELETE : /article/:id
