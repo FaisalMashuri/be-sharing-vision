@@ -18,7 +18,7 @@ Query SQL :
 );`
 
 ### Soal No 2.
-Database sudah langsung terbuat saat mengetikan `docker-compose up` dan Sudah ada auto migrate, jadi ketika program dijalankan jika table belum ada, maka akan langsung terbuat table dengan kolom kolom yang sudah di define.
+Database sudah langsung terbuat saat mengetikan `docker-compose up` dan Sudah ada auto migrate pada program golang, jadi ketika program dijalankan jika table belum ada, maka akan langsung terbuat table dengan kolom kolom yang sudah di define.
 
 ### Soal No 3.
 Sudah Sudah dibuat
