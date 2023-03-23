@@ -1,0 +1,28 @@
+version: '3.6'
+services:
+  mysql:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_HOST: ${HOSTDB}
+      MYSQL_ROOT_PASSWORD: ${ROOTPASSWORDDB}
+      MYSQL_DATABASE: ${DBNAME}
+      MYSQL_USER: ${DBUSER}
+      MYSQL_PASSWORD: ${DBPASSWORD}
+    volumes:
+      - app_db:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  app_db:
+
+networks:
+  nt_mysql:
+    driver: bridge
